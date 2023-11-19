@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "hazmat",
+  "version": "${version}",
+  "name": "Hazmat",
+  "description": "Мод добавляющий хазматы в игру",
+  "authors": ["VkProfi"],
+  "contact": {
+    "discord": "vkprofi"
+  },
+  "license": ["VPLMod"],
+  "icon": "assets/hazmat/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "ru.vkprofi.hazmat.client.HazmatClient"
+    ],
+    "main": [
+      "ru.vkprofi.hazmat.main"
+    ]
+  },
+  "mixins": [
+    "hazmat.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.17",
+    "fabric": "*",
+    "minecraft": "~1.19.2",
+    "java": ">=17"
+  }
+}
