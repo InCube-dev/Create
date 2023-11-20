@@ -1,9 +1,12 @@
 package ru.vkprofi.hazmat;
 
+import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import ru.vkprofi.hazmat.Item.material.DimondHazmat;
@@ -12,6 +15,8 @@ import ru.vkprofi.hazmat.Item.material.LeatherHazmat;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.function.Supplier;
 
 public class registry {
     public static Logger log = LogManager.getLogger("[Hazmat] (registry)");  // Log4j для вывода в консоль от класса
@@ -34,6 +39,24 @@ public class registry {
     public static final Item LEGGINGS_ONE_HAZMAT = registryItem("legging_one_hazmat", new ArmorItem(new LeatherHazmat(), EquipmentSlot.LEGS, new FabricItemSettings()));
     public static final Item BOOTS_ONE_HAZMAT = registryItem("boot_one_hazmat", new ArmorItem(new LeatherHazmat(), EquipmentSlot.FEET, new FabricItemSettings()));
 
+    //группа
+    private static final ItemGroup group = FabricItemGroupBuilder.create(new Identifier(main.MODID,"all_Item"))
+            .icon((Supplier<ItemStack>) CHESTPLATE_ONE_HAZMAT)
+            .appendItems(items -> {
+                items.add(new ItemStack(HELMET_ONE_HAZMAT));
+                items.add(new ItemStack(CHESTPLATE_ONE_HAZMAT));
+                items.add(new ItemStack(LEGGINGS_ONE_HAZMAT));
+                items.add(new ItemStack(BOOTS_ONE_HAZMAT));
+                items.add(new ItemStack(HELMET_TWO_HAZMAT));
+                items.add(new ItemStack(CHESTPLATE_TWO_HAZMAT));
+                items.add(new ItemStack(LEGGINGS_TWO_HAZMAT));
+                items.add(new ItemStack(BOOTS_TWO_HAZMAT));
+                items.add(new ItemStack(HELMET_TREE_HAZMAT));
+                items.add(new ItemStack(CHESTPLATE_TREE_HAZMAT));
+                items.add(new ItemStack(LEGGINGS_TREE_HAZMAT));
+                items.add(new ItemStack(BOOTS_TREE_HAZMAT));
+            })
+            .build();
     public registry(){}
     private static Item registryItem(String ID, Item item){
         return Registry.register(Registry.ITEM,new Identifier(main.MODID,ID),item);
