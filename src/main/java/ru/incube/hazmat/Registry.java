@@ -27,7 +27,7 @@ public class Registry {
     public static final Item BOOTS_ONE_HAZMAT = registerArmorItems("boot", new LeatherHazmat(), EquipmentSlot.FEET);
 
     // TODO: Убрал "static", чтобы не было предупреждения "Instantiation of utility class 'Registry'" в Main классе
-    private final ItemGroup GROUP = FabricItemGroupBuilder.create(new Identifier(Main.MODID, "all_Item"))
+    private final ItemGroup GROUP = FabricItemGroupBuilder.create(new Identifier(Main.MODID, "all_item"))
             .icon(() -> new ItemStack(CHESTPLATE_ONE_HAZMAT))
             .appendItems(items -> {
                 items.add(new ItemStack(HELMET_ONE_HAZMAT));
@@ -50,6 +50,7 @@ public class Registry {
     }
 
     private static Item registerArmorItems(String name, ArmorMaterial material, EquipmentSlot slot) {
-        return registerItem(name + "_" + slot.getName() + "_hazmat", new ArmorItem(material, slot, ITEM_SETTINGS));
+        String materialName = material.getClass().getSimpleName().toLowerCase();
+        return registerItem(name + "_" + materialName + "_" + slot.getName(), new ArmorItem(material, slot, ITEM_SETTINGS));
     }
 }

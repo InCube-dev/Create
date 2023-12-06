@@ -11,7 +11,7 @@ import ru.incube.hazmat.config.SimpleConfig;
 @Slf4j(topic = "Hazmat")
 @RequiredArgsConstructor
 public class Main implements ModInitializer {
-    public static final String MODID = "hazmat"; // мод ID
+    public static final String MODID = "hazmat";
 
     @NonNull
     private final SimpleConfig config = SimpleConfig.of("hazmat").provider(this::provider).request();
@@ -22,7 +22,7 @@ public class Main implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        log.info("\n\n==============");
+        log.info("==============");
         // Регистрация
         new Registry();
         log.info("Предметы зарегистрированы");
@@ -34,10 +34,10 @@ public class Main implements ModInitializer {
 
     private String provider(String filename) {
         return """
-                Настройки зоны:
-                ZoneX: 0
-                ZoneZ: 0
-                ZoneRadius: 40
+                # Настройки зоны
+                ZoneX=0
+                ZoneZ=0
+                ZoneRadius=40
                 """;
     }
 }
