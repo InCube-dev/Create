@@ -17,6 +17,9 @@ out/
 !src/**/build/
 /build/
 
+# loom-cache
+build/loom-cache/
+
 # Ignore Gradle GUI config
 gradle-app.setting
 
