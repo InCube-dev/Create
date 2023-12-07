@@ -20,6 +20,9 @@ out/
 # loom-cache
 build/loom-cache/
 
+# Ignore files with "net_fabricmc_yarn" in their name
+*net_fabricmc_yarn*
+
 # Ignore Gradle GUI config
 gradle-app.setting
 
@@ -138,3 +141,4 @@ buildNumber.properties
 
 # Common working directory
 run/
+/build/loom-cache/remapped_working/
