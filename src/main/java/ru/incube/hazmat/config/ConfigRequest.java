@@ -14,12 +14,11 @@ public class ConfigRequest {
     }
 
     /**
-     * Перевод:
-     * Устанавливает провайдера конфигурации по умолчанию, используемого для генерации
-     * конфигурации, если он отсутствует.
+     * Устанавливает провайдера конфига по умолчанию, используемого для генерации
+     * конфига, если он отсутствует.
      *
-     * @param provider поставщик конфигурации по умолчанию
-     * @return текущий объект запроса конфигурации
+     * @param provider провайдер конфигурации по умолчанию
+     * @return текущий объект запроса конфига
      */
     public ConfigRequest provider(DefaultConfig provider) {
         this.provider = provider;
@@ -27,9 +26,9 @@ public class ConfigRequest {
     }
 
     /**
-     * Loads the config from the filesystem.
+     * Загружает конфиг из системы.
      *
-     * @return config object
+     * @return конфиг
      * @see SimpleConfig
      */
     public SimpleConfig request() {
