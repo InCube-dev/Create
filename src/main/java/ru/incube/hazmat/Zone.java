@@ -40,20 +40,20 @@ public class Zone {
     }
 
     private void applyEffectsBasedOnArmor(PlayerEntity player) {
-        if (player.getEquippedStack(EquipmentSlot.HEAD).getItem() == Registry.HELMET_ONE_HAZMAT &&
-                player.getEquippedStack(EquipmentSlot.CHEST).getItem() == Registry.CHESTPLATE_ONE_HAZMAT &&
-                player.getEquippedStack(EquipmentSlot.LEGS).getItem() == Registry.LEGGINGS_ONE_HAZMAT &&
-                player.getEquippedStack(EquipmentSlot.FEET).getItem() == Registry.BOOTS_ONE_HAZMAT) {
+        if (player.getEquippedStack(EquipmentSlot.HEAD).getItem() == Registry.LEATHER_HELMET_HEAD &&
+                player.getEquippedStack(EquipmentSlot.CHEST).getItem() == Registry.LEATHER_CHESTPLATE_CHEST &&
+                player.getEquippedStack(EquipmentSlot.LEGS).getItem() == Registry.LEATHER_LEGGINGS_LEGS &&
+                player.getEquippedStack(EquipmentSlot.FEET).getItem() == Registry.LEATHER_BOOTS_FEET) {
             applyEffects(player, new StatusEffectInstance(StatusEffects.NAUSEA, 10, 10), new StatusEffectInstance(StatusEffects.BLINDNESS, 10, 10), new StatusEffectInstance(StatusEffects.POISON, 10, 1));
-        } else if (player.getEquippedStack(EquipmentSlot.HEAD).getItem() == Registry.HELMET_TWO_HAZMAT &&
-                player.getEquippedStack(EquipmentSlot.CHEST).getItem() == Registry.CHESTPLATE_TWO_HAZMAT &&
-                player.getEquippedStack(EquipmentSlot.LEGS).getItem() == Registry.LEGGINGS_TWO_HAZMAT &&
-                player.getEquippedStack(EquipmentSlot.FEET).getItem() == Registry.BOOTS_TWO_HAZMAT) {
+        } else if (player.getEquippedStack(EquipmentSlot.HEAD).getItem() == Registry.IRON_HELMET_HEAD &&
+                player.getEquippedStack(EquipmentSlot.CHEST).getItem() == Registry.IRON_CHESTPLATE_CHEST &&
+                player.getEquippedStack(EquipmentSlot.LEGS).getItem() == Registry.IRON_LEGGINGS_LEGS &&
+                player.getEquippedStack(EquipmentSlot.FEET).getItem() == Registry.IRON_BOOTS_FEET) {
             applyEffects(player, new StatusEffectInstance(StatusEffects.NAUSEA, 10, 4), new StatusEffectInstance(StatusEffects.BLINDNESS, 10));
-        } else if (player.getEquippedStack(EquipmentSlot.HEAD).getItem() == Registry.HELMET_TREE_HAZMAT &&
-                player.getEquippedStack(EquipmentSlot.CHEST).getItem() == Registry.CHESTPLATE_TREE_HAZMAT &&
-                player.getEquippedStack(EquipmentSlot.LEGS).getItem() == Registry.LEGGINGS_TREE_HAZMAT &&
-                player.getEquippedStack(EquipmentSlot.FEET).getItem() == Registry.BOOTS_TREE_HAZMAT) {
+        } else if (player.getEquippedStack(EquipmentSlot.HEAD).getItem() == Registry.DIAMOND_HELMET_HEAD &&
+                player.getEquippedStack(EquipmentSlot.CHEST).getItem() == Registry.DIAMOND_CHESTPLATE_CHEST &&
+                player.getEquippedStack(EquipmentSlot.LEGS).getItem() == Registry.DIAMOND_LEGGINGS_LEGS &&
+                player.getEquippedStack(EquipmentSlot.FEET).getItem() == Registry.DIAMOND_BOOTS_FEET) {
             applyEffects(player, new StatusEffectInstance(StatusEffects.BLINDNESS, 10));
         } else {
             applyEffects(player, new StatusEffectInstance(StatusEffects.NAUSEA, 10, 10), new StatusEffectInstance(StatusEffects.WITHER, 10, 1), new StatusEffectInstance(StatusEffects.BLINDNESS, 10, 10), new StatusEffectInstance(StatusEffects.LEVITATION, 10, 10), new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 10, 1));
