@@ -1,4 +1,4 @@
-package ru.incube.hazmat.Item.material;
+package ru.incube.hazmat.item.material;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffect;
