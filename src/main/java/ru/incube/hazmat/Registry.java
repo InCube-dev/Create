@@ -6,9 +6,9 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
-import ru.incube.hazmat.Item.material.DiamondHazmat;
-import ru.incube.hazmat.Item.material.IronHazmat;
-import ru.incube.hazmat.Item.material.LeatherHazmat;
+import ru.incube.hazmat.item.material.DiamondHazmat;
+import ru.incube.hazmat.item.material.IronHazmat;
+import ru.incube.hazmat.item.material.LeatherHazmat;
 
 @Slf4j(topic = "Registry")
 public class Registry {
