@@ -1,14 +1,15 @@
 {
-  "item.hazmat.helmet_one_hazmat": "Слабозащитная шапка",
-  "item.hazmat.helmet_two_hazmat": "Среднезащитная шапка",
-  "item.hazmat.helmet_tree_hazmat": "Полнозащитная шапка",
-  "item.hazmat.chestplate_one_hazmat": "Слабозащитная куртка",
-  "item.hazmat.chestplate_two_hazmat": "Среднезащитная куртка",
-  "item.hazmat.chestplate_tree_hazmat": "Полнозащитная куртка",
-  "item.hazmat.legging_one_hazmat": "Слабозащитные штаны",
-  "item.hazmat.legging_two_hazmat": "Среднезащитные штаны",
-  "item.hazmat.legging_tree_hazmat": "Полнозащитные штаны",
-  "item.hazmat.boot_one_hazmat": "Слабозащитные ботинки",
-  "item.hazmat.boot_two_hazmat": "Среднезащитные ботинки",
-  "item.hazmat.boot_tree_hazmat": "Полнозащитные ботинки"
+  "item.hazmat.helmet_leather_head": "Слабозащитная шапка",
+  "item.hazmat.helmet_iron_head": "Среднезащитная шапка",
+  "item.hazmat.helmet_diamond_head": "Полнозащитная шапка",
+  "item.hazmat.chestplate_leather_chest": "Слабозащитная куртка",
+  "item.hazmat.chestplate_iron_chest": "Среднезащитная куртка",
+  "item.hazmat.chestplate_diamond_chest": "Полнозащитная куртка",
+  "item.hazmat.leggings_leather_legs": "Слабозащитные штаны",
+  "item.hazmat.leggings_iron_legs": "Среднезащитные штаны",
+  "item.hazmat.leggings_diamond_legs": "Полнозащитные штаны",
+  "item.hazmat.boots_leather_feet": "Слабозащитные ботинки",
+  "item.hazmat.boots_iron_feet": "Среднезащитные ботинки",
+  "item.hazmat.boots_diamond_feet": "Полнозащитные ботинки",
+  "itemGroup.hazmat.all_item": "Защитные костюмы и другое"
 }

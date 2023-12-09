@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hazmat:item/leggings_diamond_legs"
+  }
+}

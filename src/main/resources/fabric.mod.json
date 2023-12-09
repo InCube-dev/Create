@@ -4,19 +4,19 @@
   "version": "${version}",
   "name": "Hazmat",
   "description": "Мод добавляющий хазматы в игру",
-  "authors": ["VkProfi"],
+  "authors": ["VkProfi", "11deadrabbit", "Silke"],
   "contact": {
-    "discord": "vkprofi"
+    "github": "github.com/InCube-dev"
   },
   "license": ["VPLMod"],
   "icon": "assets/hazmat/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "ru.vkprofi.hazmat.client.HazmatClient"
+      "ru.incube.hazmat.client.HazmatClient"
     ],
     "main": [
-      "ru.vkprofi.hazmat.main"
+      "ru.incube.hazmat.Main"
     ]
   },
   "mixins": [
